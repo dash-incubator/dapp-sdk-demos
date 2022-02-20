@@ -1,11 +1,11 @@
-# Dash DApp Audio Uploader
+# Dash dApp Audio Uploader
 
 ![alt text](diagram.png)
 
 ## Usage
 The current repo includes all functionality required to submit an audio file using `dist/index.html`. On submission the file will be manipulated according to the selected options ( encrypted, transcoded, etc. ) before being uploaded to IPFS, once upload is complete all metadata + IPFS file pins will be saved in a Dash Platform document.
 
-If you wish to add this functionality to your own DApp the important files are `src/init.js`, `src/upload/audio,js`, and `src/uploader.js`
+If you wish to add this functionality to your own dApp the important files are `src/init.js`, `src/upload/audio,js`, and `src/uploader.js`
 
 ### `src/init.js`
 Includes the basic initialization steps to establish a Dash Platform connection and ensure tDash is present in the users wallet.
