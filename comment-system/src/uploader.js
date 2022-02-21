@@ -18,7 +18,6 @@ let comment = {
             });
         }
     },
-    messages = [],
     parent = '',
     thread = 'dapp-sdk-demos';
 
@@ -48,7 +47,9 @@ function template(found, nested = false) {
                                 </svg>
                             </div>
 
-                            <b>timestamp dependent on <a class='--color-black-500 --color-primary --color-state --text-underline' href='https://discord.com/channels/670271785974890526/670540408593448980/944866355608444959' target='_blank'>dcg response</a></b>
+                            <b>
+                                ${new Date(data['$createdAt'])}
+                            </b>
                         </span>
                     </div>
                 </div>

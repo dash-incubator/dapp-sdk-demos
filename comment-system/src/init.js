@@ -25,9 +25,7 @@ const init = async () => {
             state.deactivate(loading.element);
         }
 
-        setTimeout(() => {
-            emitter.dispatch('user.init');
-        }, 1000);
+        emitter.dispatch('user.init');
     }
     else {
         alert.error(`Deposit tDash in <b>${user.session.wallet.address}</b> to continue`);
